@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon_package_v0.16/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon_package_v0.16/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon_package_v0.16/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<title>TV Maze</title>
+	<link rel="stylesheet"
+		href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+
+		<h1>TV Maze</h1>
+
+		<form class="form-inline" id="search-form">
+			<input class="form-control" id="search-query" value="bletchley">
+			<button class="btn btn-primary" type="submit">Go!</button>
+		</form>
+
+		<div class="row mt-3" id="shows-list">
+		</div>
+
+		<section style="display: none" id="episodes-area">
+			<h2>Episodes</h2> 
+			<ul id="episodes-list">
+			</ul>
+		</section>  
+
+		<script src="http://unpkg.com/jquery"></script>
+		<script src="http://unpkg.com/axios/dist/axios.js"></script>
+		<script src="tvmaze.js"></script>
+
+	</div>
+
+</body>
+</html>
